@@ -23,7 +23,7 @@ export function AvatarGroup({ avatars, label, className }: AvatarGroupProps) {
         ))}
       </div>
       {label && (
-        <span className="-ml-2 grid size-9 place-items-center rounded-full bg-secondary-500 font-body text-label-xs font-medium text-neutral-950 sm:size-10">
+        <span className="-ml-2 grid size-9 place-items-center rounded-full bg-secondary-400 font-body text-label-xs font-medium text-neutral-950 sm:size-10">
           {label}
         </span>
       )}

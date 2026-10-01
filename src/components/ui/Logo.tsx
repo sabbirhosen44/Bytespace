@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
       href="/"
       aria-label="ByteSpace home"
       className={cn(
-        "inline-block transition-transform duration-300 hover:scale-105",
+        "inline-block transition-transform duration-300 hover:scale-105 lg:-translate-y-[7px] lg:translate-x-[2px]",
         className
       )}
     >
@@ -18,7 +18,7 @@ export function Logo({ className }: { className?: string }) {
         width={140}
         height={40}
         priority
-        className="h-8 w-auto lg:h-[34px]"
+        className="h-8 w-auto lg:h-[37px]"
       />
     </Link>
   );

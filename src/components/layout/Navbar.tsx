@@ -24,7 +24,7 @@ export function Navbar() {
         {/* Desktop links */}
         <nav
           aria-label="Main"
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 lg:flex"
+          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-6 lg:flex"
         >
           {navLinks.map((link) => {
             const active = pathname === link.href;

@@ -11,8 +11,8 @@ export function ProgressCard({
       <p className="mt-1 font-heading text-[32px] font-semibold leading-tight sm:text-[48px]">
         55%
       </p>
-      <div className="mt-2 h-2 overflow-hidden rounded-full bg-neutral-100">
-        <div className="h-full w-[55%] origin-left animate-progress rounded-full bg-secondary-500" />
+      <div className="mt-2 h-2 overflow-hidden rounded-full bg-neutral-50">
+        <div className="h-full w-[55%] origin-left animate-progress rounded-full bg-secondary-400" />
       </div>
     </FloatingCard>
   );
