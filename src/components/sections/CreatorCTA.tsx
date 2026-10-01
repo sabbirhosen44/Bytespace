@@ -19,7 +19,7 @@ const shapes: Shape[] = [
   { src: "cylinder-white.png", x: 1270, y: 40, w: 190 },
   { src: "cone-white.png", x: 0, y: 242, w: 115 },
   { src: "donut-lime.png", x: 70, y: 358, w: 237 },
-  { src: "squiggle-lime-br.png", x: 1180, y: 358, w: 237 },
+  { src: "squiggle-lime-br.png", x: 1180, y: 347, w: 237 },
 ];
 
 export function CreatorCTA() {
