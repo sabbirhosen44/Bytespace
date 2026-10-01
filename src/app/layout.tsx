@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${satoshi.variable}`}>
       <body className="relative flex min-h-screen flex-col bg-white font-body text-body-m text-neutral-950 antialiased">
-        <Navbar />
         <div className="flex-1">{children}</div>
-        <Footer />
       </body>
     </html>
   );
