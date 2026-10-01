@@ -13,6 +13,7 @@ export default function Home() {
       <CourseExplorer />
       <LearningPaths />
       <GrowthSection />
+      <CreatorCTA />
     </main>
   );
 }

@@ -1,8 +1,9 @@
-import Image from "next/image";
-import { SearchBar } from "@/components/ui/SearchBar";
-import { TopicCard } from "@/components/ui/TopicCard";
 import { ProgressCard } from "@/components/ui/ProgressCard";
+import { SearchBar } from "@/components/ui/SearchBar";
 import { StudentsCard } from "@/components/ui/StudentsCard";
+import { TopicCard } from "@/components/ui/TopicCard";
+import Image from "next/image";
+import { GridBackground } from "../ui/GridBackground";
 
 const IMG = "/images/hero";
 
@@ -57,16 +58,7 @@ export function Hero() {
 
         <div className="lg:absolute lg:left-0 lg:top-0 lg:h-[1024px] lg:w-[1440px] lg:origin-top-left lg:[scale:tan(atan2(100cqw,1440px))]">
           {/* Grid pattern */}
-          <div
-            aria-hidden
-            className="absolute inset-0 [--grid:60px] [--gy:58px] lg:[--grid:120px] lg:[--gy:118px]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(255,255,255,0.12) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.12) 2px, transparent 2px)",
-              backgroundSize: "var(--grid) var(--grid)",
-              backgroundPosition: "0 var(--gy), 0 0",
-            }}
-          />
+          <GridBackground/>
 
           {/* Lime shapes */}
           {limeShapes.map((s) => (

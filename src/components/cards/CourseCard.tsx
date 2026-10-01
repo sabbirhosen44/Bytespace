@@ -61,7 +61,7 @@ export function CourseCard({ course }: { course: Course }) {
 
       {/* Level + students */}
       <div className="mt-4 flex items-center gap-3">
-        <span className="inline-flex h-8 items-center gap-2 rounded-full bg-neutral-50 pl-4 pr-3 font-body text-body-xs text-neutral-700">
+        <span className="inline-flex h-8 items-center gap-2.5 rounded-full bg-neutral-50 pl-3.5 pr-3 font-body text-body-xs text-neutral-700">
           <LevelIcon />
           {course.level}
         </span>
@@ -69,7 +69,7 @@ export function CourseCard({ course }: { course: Course }) {
       </div>
 
       {/* Price */}
-      <p className="mt-4 flex items-baseline gap-0.5">
+      <p className="mt-3.5 flex items-baseline">
         <span className="font-heading text-heading-xs font-semibold text-primary-800">
           ${course.price}
         </span>
