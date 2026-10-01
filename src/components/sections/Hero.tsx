@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { Navbar } from "@/components/layout/Navbar";
 import { SearchBar } from "@/components/ui/SearchBar";
 import { TopicCard } from "@/components/ui/TopicCard";
 import { ProgressCard } from "@/components/ui/ProgressCard";
 import { StudentsCard } from "@/components/ui/StudentsCard";
 
 const IMG = "/images/hero";
-
 
 
 type LimeShape = {
@@ -54,7 +52,6 @@ const whiteShapes: WhiteShape[] = [
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-primary-800 text-white [container-type:inline-size]">
-      <Navbar />
 
       <div className="lg:relative lg:h-[71.1111cqw]">
 

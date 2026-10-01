@@ -15,9 +15,15 @@ const underline =
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isHome = pathname === "/";
 
   return (
-    <header className="absolute inset-x-0 top-0 z-30 text-white">
+    <header
+      className={cn(
+        "inset-x-0 top-0 z-30 text-white",
+        isHome ? "absolute" : "relative bg-primary-800"
+      )}
+    >
       <Container className="relative flex h-16 items-center justify-between sm:h-20 lg:h-[120px]">
         <Logo />
 
