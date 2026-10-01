@@ -1,11 +1,14 @@
 import { cn } from "@/lib/utils";
 
-export function GridBackground({ className }: { className?: string }) {
+type GridBackgroundProps = { className?: string; animated?: boolean };
+
+export function GridBackground({ className, animated = false }: GridBackgroundProps) {
   return (
     <div
       aria-hidden
       className={cn(
         "absolute inset-0 [--grid:60px] [--gy:58px] lg:[--grid:120px] lg:[--gy:118px]",
+        animated && "animate-grid-drift",
         className
       )}
       style={{

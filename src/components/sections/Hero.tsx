@@ -18,14 +18,14 @@ type LimeShape = {
 // Lime shapes: touch the screen edge on every breakpoint
 const limeShapes: LimeShape[] = [
   {
-    src: "frame2.png", 
+    src: "frame2.png",
     className:
       "left-0 bottom-[30%] w-[80px] lg:bottom-auto lg:top-[221px] lg:w-[267px]",
     delay: "0s",
     duration: "7s",
   },
   {
-    src: "cone2.png", 
+    src: "cone2.png",
     className:
       "right-0 bottom-[24%] w-[70px] lg:bottom-auto lg:top-[220px] lg:w-[213px]",
     delay: "-2s",
@@ -44,10 +44,10 @@ type WhiteShape = {
 
 // White shapes: desktop only, drawn in front of the big lime ring
 const whiteShapes: WhiteShape[] = [
-  { src: "cone1.png", cx: 1199, cy: 558, w: 192, delay: "-1s", duration: "6s" }, 
-  { src: "frame1.png", cx: 271, cy: 565, w: 178, delay: "-3s", duration: "7s" }, 
-  { src: "frame3.png", cx: 1282, cy: 838, w: 317, delay: "-2s", duration: "8s" }, 
-  { src: "cone3.png", cx: 187, cy: 852, w: 348, delay: "-4s", duration: "7.5s" }, 
+  { src: "cone1.png", cx: 1199, cy: 558, w: 192, delay: "-1s", duration: "6s" },
+  { src: "frame1.png", cx: 271, cy: 565, w: 178, delay: "-3s", duration: "7s" },
+  { src: "frame3.png", cx: 1282, cy: 838, w: 317, delay: "-2s", duration: "8s" },
+  { src: "cone3.png", cx: 187, cy: 852, w: 348, delay: "-4s", duration: "7.5s" },
 ];
 
 export function Hero() {
@@ -58,7 +58,7 @@ export function Hero() {
 
         <div className="lg:absolute lg:left-0 lg:top-0 lg:h-[1024px] lg:w-[1440px] lg:origin-top-left lg:[scale:tan(atan2(100cqw,1440px))]">
           {/* Grid pattern */}
-          <GridBackground/>
+          <GridBackground animated />
 
           {/* Lime shapes */}
           {limeShapes.map((s) => (
