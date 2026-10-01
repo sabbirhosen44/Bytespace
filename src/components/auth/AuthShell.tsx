@@ -22,7 +22,7 @@ export function AuthShell({ title, description, children }: AuthShellProps) {
       >
         <Reveal animation="fade-in" className="w-fit lg:absolute lg:left-[122px] lg:top-[34px]">
           <Link href="/" aria-label="ByteSpace home">
-            <Logo iconOnly />
+            <Logo />
           </Link>
         </Reveal>
 
