@@ -66,7 +66,7 @@ export function CourseExplorer() {
         {/* Course grid */}
         <div className="mt-10 lg:mt-[76px]">
           {visible.length > 0 ? (
-            <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+            <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-10">
               {visible.map((course) => (
                 <li key={`${active}-${course.id}`} className="animate-fade-up">
                   <CourseCard course={course} />
