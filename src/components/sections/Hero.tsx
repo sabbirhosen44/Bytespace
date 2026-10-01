@@ -7,11 +7,7 @@ import { StudentsCard } from "@/components/ui/StudentsCard";
 
 const IMG = "/images/hero";
 
-/**
- * Desktop (lg+) is a 1440x1024 artboard copied 1:1 from Figma. It is scaled
- * with pure CSS to fit the section width, so it always matches the design.
- * Below lg a separate stacked mobile layout is used.
- */
+
 
 type LimeShape = {
   src: string;
@@ -23,14 +19,14 @@ type LimeShape = {
 // Lime shapes: touch the screen edge on every breakpoint
 const limeShapes: LimeShape[] = [
   {
-    src: "frame2.png", // lime squiggle (left)
+    src: "frame2.png", 
     className:
       "left-0 bottom-[30%] w-[80px] lg:bottom-auto lg:top-[221px] lg:w-[267px]",
     delay: "0s",
     duration: "7s",
   },
   {
-    src: "cone2.png", // lime cylinder (right)
+    src: "cone2.png", 
     className:
       "right-0 bottom-[24%] w-[70px] lg:bottom-auto lg:top-[220px] lg:w-[213px]",
     delay: "-2s",
@@ -40,19 +36,19 @@ const limeShapes: LimeShape[] = [
 
 type WhiteShape = {
   src: string;
-  cx: number; // centre x in the 1440x1024 artboard
-  cy: number; // centre y
-  w: number; // width
+  cx: number;
+  cy: number;
+  w: number;
   delay: string;
   duration: string;
 };
 
 // White shapes: desktop only, drawn in front of the big lime ring
 const whiteShapes: WhiteShape[] = [
-  { src: "cone1.png", cx: 1199, cy: 558, w: 192, delay: "-1s", duration: "6s" }, // triangle
-  { src: "frame1.png", cx: 271, cy: 565, w: 178, delay: "-3s", duration: "7s" }, // small squiggle
-  { src: "frame3.png", cx: 1282, cy: 838, w: 317, delay: "-2s", duration: "8s" }, // big squiggle
-  { src: "cone3.png", cx: 187, cy: 852, w: 348, delay: "-4s", duration: "7.5s" }, // donut
+  { src: "cone1.png", cx: 1199, cy: 558, w: 192, delay: "-1s", duration: "6s" }, 
+  { src: "frame1.png", cx: 271, cy: 565, w: 178, delay: "-3s", duration: "7s" }, 
+  { src: "frame3.png", cx: 1282, cy: 838, w: 317, delay: "-2s", duration: "8s" }, 
+  { src: "cone3.png", cx: 187, cy: 852, w: 348, delay: "-4s", duration: "7.5s" }, 
 ];
 
 export function Hero() {
@@ -60,9 +56,8 @@ export function Hero() {
     <section className="relative overflow-hidden bg-primary-800 text-white [container-type:inline-size]">
       <Navbar />
 
-      {/* Reserves the scaled height on desktop (1024 / 1440) */}
       <div className="lg:relative lg:h-[71.1111cqw]">
-        {/* Artboard: 1440x1024, scaled to the section width on desktop */}
+
         <div className="lg:absolute lg:left-0 lg:top-0 lg:h-[1024px] lg:w-[1440px] lg:origin-top-left lg:[scale:tan(atan2(100cqw,1440px))]">
           {/* Grid pattern */}
           <div
